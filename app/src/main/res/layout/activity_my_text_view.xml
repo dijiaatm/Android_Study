@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--
+        wrap_content:表示TextView的宽度取决于当前内容的宽度
+        match_parent:表示父级容器的宽高
+    -->
+    <!--TextView-->
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="@color/tv_one_font_color"
+        android:gravity="center"
+        android:shadowColor="#74E7B5"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1"
+        android:text="@string/tv_one"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true">
+        <requestFocus/><!--引入此标签可实现跑马灯启动即运行-->
+    </TextView>
+
+
+</LinearLayout>

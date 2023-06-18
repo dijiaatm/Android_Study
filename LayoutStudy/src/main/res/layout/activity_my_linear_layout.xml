@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyLinearLayout.MyLinearLayout"
+    android:orientation="vertical"
+    android:divider="@drawable/divider"
+    android:showDividers="end"
+    android:dividerPadding="0dp"
+    >
+    <!--
+    orientation:控件的排列方式
+        vertical:纵向布局
+        horizontal:横向布局
+    gravity:控制组件所包含的子元素的对其方式,可多个组合(前提,设置orientation为vertical)
+    layout_gravity:在子组件中写,跟着的属性决定了当前设置该属性的控件,在父容器中的
+                   对其范围,它的位置都是基于自身所在水平方向上的位移
+    divider:分割线属性   书写的位置:父容器中编写
+            单引入divider无法生效，需要配合showDividers属性一起,才能奏效
+    showDividers:
+                none:不显示分割线
+                beginning:在所有子元素的开端设置一行分割
+                middle:在所有子元素之间(不包含开头结尾)
+                end:在子元素末尾
+    dividerPadding:设置分割线与父元素之间的边距
+    layout_weight:作用于子元素,数额代表设置了该属性的控件在父容器中所占区域的比例
+    -->
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#F4C1C1"
+        android:layout_weight="0.5"
+        />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#C31E1E"
+        android:layout_weight="0.5"
+        />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#2C81EA"
+        android:layout_weight="0.5"
+        />
+
+
+</LinearLayout>

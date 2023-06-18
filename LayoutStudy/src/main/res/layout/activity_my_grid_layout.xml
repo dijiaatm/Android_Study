@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="horizontal">
+    <!--
+        orientation:vertical
+            配合使用 android:rowCount="number" 来控制单列显示控件个数
+        orientation:vertical
+            配合使用 android:columnCount="number" 来控制单行显示控件的个数
+    -->
+    <Button
+        android:layout_column="01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一个" />
+
+    <Button
+        android:layout_columnSpan="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第二个" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三个" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第四个" />
+
+    <Button
+        android:layout_gravity="fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第五个" />
+
+</GridLayout>

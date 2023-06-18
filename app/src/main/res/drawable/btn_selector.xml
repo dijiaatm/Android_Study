@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--设置默认-->
+    <item android:drawable="@drawable/left_arrow_back_24" android:state_pressed="true"/>
+    <!--设置点击后图片-->
+    <item android:drawable="@drawable/right_arrow_forward_24"/>
+</selector>

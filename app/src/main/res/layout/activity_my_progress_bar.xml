@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProgressBar.MyProgressBar"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:max="100"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:max="100"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示|隐藏进度条"
+        android:onClick="checkClick"
+        />
+    <ProgressBar
+        android:id="@+id/pbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增加进度"
+        android:onClick="inCrementClick"
+        />
+</LinearLayout>
